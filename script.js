@@ -12,7 +12,7 @@ const windValueTxt = document.querySelector(".wind-speed-value");
 
 const forecastItemContainer = document.querySelector(".forecast-item-container");
 
-const apiKey = "";
+const apiKey = process.env.API_KEY;
 
 searchBtn.addEventListener("click", () => {
     if (cityInput.ariaValueMax.trim() != "") {
